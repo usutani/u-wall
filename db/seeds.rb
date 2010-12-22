@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+WebClip.delete_all
+
+WebClip.create([
+  {:title => 'ツール工房 覚書', :url => 'http://studio.tgl.jp/blog/', 
+  :quote => 'ツール工房メンバーによる 技術、デザイン、ビジネスの覚え書き', 
+  :note => ''}, 
+  {:title => 'Git Reference', :url => 'http://gitref.org/', 
+  :quote => 'The Git Reference site was put together by the GitHub team.', 
+  :note => '典型的な作業で用いるコマンドがまとめられています。'}, 
+  {:title => 'github', :url => 'https://github.com/', 
+  :quote => 'GitHub is the best way to collaborate with others.', 
+  :note => ''}, 
+  {:title => 'Pivotal Tracker', :url => 'http://www.pivotaltracker.com/', 
+  :quote => 'Collaborative, lightweight project management tool, brought to you by the experts in agile software development.', 
+  :note => 'シンプルな、ストーリーベースのプロジェクト計画づくりのためのツールです。'}])

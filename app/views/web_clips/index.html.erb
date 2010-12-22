@@ -13,8 +13,8 @@
 <% @web_clips.each do |web_clip| %>
   <tr>
     <td><%= link_to web_clip.title, web_clip.url, :target => '_blank' %></td>
-    <td><%= web_clip.quote %></td>
-    <td><%= web_clip.note %></td>
+    <td><%= link_to web_clip.quote, web_clip.url, :target => '_blank' %></td>
+    <td><%= link_to web_clip.note, web_clip.url, :target => '_blank' %></td>
     <td><%= link_to 'Show', web_clip %></td>
     <td><%= link_to 'Edit', edit_web_clip_path(web_clip) %></td>
     <td><%= link_to 'Destroy', web_clip, :confirm => 'Are you sure?', :method => :delete %></td>
