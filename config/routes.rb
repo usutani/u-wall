@@ -1,5 +1,7 @@
 UWall::Application.routes.draw do
   resources :web_clips
+  
+  root :to => "web_clips#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
