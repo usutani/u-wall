@@ -1,0 +1,29 @@
+<h1>Listing web_clips</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Quote</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @web_clips.each do |web_clip| %>
+  <tr>
+    <td><%= web_clip.title %></td>
+    <td><%= web_clip.url %></td>
+    <td><%= web_clip.quote %></td>
+    <td><%= web_clip.note %></td>
+    <td><%= link_to 'Show', web_clip %></td>
+    <td><%= link_to 'Edit', edit_web_clip_path(web_clip) %></td>
+    <td><%= link_to 'Destroy', web_clip, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Web clip', new_web_clip_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @web_clip.title %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @web_clip.url %>
+</p>
+
+<p>
+  <b>Quote:</b>
+  <%= @web_clip.quote %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @web_clip.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_web_clip_path(@web_clip) %> |
+<%= link_to 'Back', web_clips_path %>
