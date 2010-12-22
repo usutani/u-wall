@@ -3,7 +3,6 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Url</th>
     <th>Quote</th>
     <th>Note</th>
     <th></th>
@@ -13,8 +12,7 @@
 
 <% @web_clips.each do |web_clip| %>
   <tr>
-    <td><%= web_clip.title %></td>
-    <td><%= web_clip.url %></td>
+    <td><%= link_to web_clip.title, web_clip.url, :target => '_blank' %></td>
     <td><%= web_clip.quote %></td>
     <td><%= web_clip.note %></td>
     <td><%= link_to 'Show', web_clip %></td>
