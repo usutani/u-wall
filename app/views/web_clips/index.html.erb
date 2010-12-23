@@ -1,27 +1,24 @@
-<h1>Listing Web Clips</h1>
+<strong>Listing Web Clips</strong>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Quote</th>
-    <th>Note</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<hr style="border-top:1px dotted #aaa;">
 
 <% @web_clips.each do |web_clip| %>
-  <tr>
-    <td><%= link_to web_clip.title, web_clip.url, :target => '_blank' %></td>
-    <td><%= link_to web_clip.quote, web_clip.url, :target => '_blank' %></td>
-    <td><%= link_to web_clip.note, web_clip.url, :target => '_blank' %></td>
-    <td><%= link_to 'Show', web_clip %></td>
-    <td><%= link_to 'Edit', edit_web_clip_path(web_clip) %></td>
-    <td><%= link_to 'Destroy', web_clip, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <div class="bookmark">
+    <%= link_to web_clip.title, web_clip.url, :target => '_blank', :class => "bookmark_title" %><br />
+    <div class="bookmark_quote">
+      <%= web_clip.quote %><br />
+    </div>
+    <div class="bookmark_note">
+      <%= web_clip.note %>
+    </div>
+    <div class="edit_links">
+      <%= link_to 'Show', web_clip %>
+      <%= link_to 'Edit', edit_web_clip_path(web_clip) %>
+      <%= link_to 'Destroy', web_clip, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+  </div>
 <% end %>
-</table>
 
-<br />
+<hr style="border-top:1px dotted #aaa;">
 
 <%= link_to 'New Web clip', new_web_clip_path %>
