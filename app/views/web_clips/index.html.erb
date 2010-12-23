@@ -11,6 +11,9 @@
     <div class="bookmark_note">
       <%= web_clip.note %>
     </div>
+    <div class="when">
+      <%= time_ago_in_words(web_clip.created_at, true) %>
+    </div>
     <div class="edit_links">
       <%= link_to 'Show', web_clip %>
       <%= link_to 'Edit', edit_web_clip_path(web_clip) %>
