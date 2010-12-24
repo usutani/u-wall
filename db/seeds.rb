@@ -18,6 +18,12 @@ WebClip.create([
   {:title => 'github', :url => 'https://github.com/', 
   :quote => 'GitHub is the best way to collaborate with others.', 
   :note => ''}, 
+  {:title => '123456789.123456789.123456789.123456789.123456789.123456789.123456789.123456789.', :url => 'https://test1.com/', 
+  :quote => '123456789.123456789.123456789.123456789.123456789.123456789.123456789.123456789.', 
+  :note => '123456789.123456789.123456789.123456789.123456789.123456789.123456789.123456789.'}, 
+  {:title => '123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 ', :url => 'https://test2.com/', 
+  :quote => '123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 ', 
+  :note => '123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 '}, 
   {:title => 'Pivotal Tracker', :url => 'http://www.pivotaltracker.com/', 
   :quote => 'Collaborative, lightweight project management tool, brought to you by the experts in agile software development.', 
   :note => 'シンプルな、ストーリーベースのプロジェクト計画づくりのためのツールです。'}])
