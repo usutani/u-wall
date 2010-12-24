@@ -53,22 +53,3 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
-
-.bookmark { 
-  margin-bottom:1.3em;
-  padding:3px;
-  width:600px;
-  margin-left:0px;
-  border:0px solid red;
- }
-.bookmark_title { line-height:130%;font-size:110%; }
-.bookmark_quote {}
-.bookmark_note { color:#a51; }
-
-.when {  font-size:90%;color:#777 }
-
-.edit_links
-{
-    opacity:0.3;
-    //display:inline;
-}
