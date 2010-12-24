@@ -4,12 +4,12 @@
 
 <% @web_clips.each do |web_clip| %>
   <div class="bookmark">
-    <%= link_to web_clip.title, web_clip.url, :target => '_blank', :class => "bookmark_title" %><br />
+    <%= link_to truncate(web_clip.title, :length =>70), web_clip.url, :target => '_blank', :class => "bookmark_title" %><br />
     <div class="bookmark_quote">
-      <%= web_clip.quote %><br />
+      <%= truncate(web_clip.quote, :length =>80) %><br />
     </div>
     <div class="bookmark_note">
-      <%= web_clip.note %>
+      <%= truncate(web_clip.note, :length =>80) %>
     </div>
     <div class="when">
       <%= time_ago_in_words(web_clip.created_at, true) %>
