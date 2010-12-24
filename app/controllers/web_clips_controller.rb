@@ -2,7 +2,7 @@ class WebClipsController < ApplicationController
   # GET /web_clips
   # GET /web_clips.xml
   def index
-    @web_clips = WebClip.all(:order => "created_at DESC")
+    @web_clips = WebClip.paginate :page => params[:page], :order => 'created_at desc', :per_page => 10
 
     respond_to do |format|
       format.html # index.html.erb
