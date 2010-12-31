@@ -1,25 +1,17 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<div class="bookmark">
   <b>Title:</b>
-  <%= @web_clip.title %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= @web_clip.url %>
-</p>
-
-<p>
+  <div class="bookmark_title"><%= @web_clip.title %></div>
+  <br />
+  <b>URL:</b>
+  <div class="bookmark_title"><%= @web_clip.url %></div>
+  <br />
   <b>Quote:</b>
-  <%= @web_clip.quote %>
-</p>
-
-<p>
+  <div class="bookmark_quote"><%= @web_clip.quote %></div>
+  <br />
   <b>Note:</b>
-  <%= @web_clip.note %>
-</p>
-
+  <div class="bookmark_note"><%= @web_clip.note %></div>
+</div>
 
 <%= link_to 'Edit', edit_web_clip_path(@web_clip) %> |
 <%= link_to 'Back', web_clips_path %>
