@@ -11,3 +11,9 @@ two:
   url: MyString
   quote: MyText
   note: MyText
+
+tool_studio:
+  title: Tool Studio
+  url: http://studio.tgl.jp/
+  quote: We aim to help knowledge workers to be more productive and innovative.
+  note: Our site.
